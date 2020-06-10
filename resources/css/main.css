@@ -1,0 +1,661 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins.ttf');
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url('../fonts/Pacifico.ttf');
+}
+
+* {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    outline: none;
+    z-index: 1;
+}
+
+*:focus,
+*:hover {
+    outline: none !important;
+}
+
+body {
+    background-color: black;
+}
+
+
+/*top logo header*/
+
+section {
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+section img {
+    height: 9vh;
+}
+
+section a {
+    height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    margin: auto;
+    position: relative;
+}
+
+section h1 {
+    padding: 2.5vh;
+    margin: 2.5vh;
+    font-family: "Pacifico";
+    margin: auto;
+    font-size: 200px;
+    color: white;
+}
+
+section h1:after {
+    content: 'Saurabh';
+    left: 50%;
+    top: 16px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+
+/*end logo header*/
+
+
+/*nav css*/
+
+.navdisplay {
+    top: 2%;
+    display: none;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 60px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    outline: none;
+    margin-right: auto;
+}
+
+.navdisplay:after,
+.navdisplay:before,
+.navdisplay div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5.5px;
+    margin: 4px 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navhide {
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 60px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navhide:after,
+.navhide:before,
+.navhide div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 4px 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navhide:before {
+    transform: translateY(9px) rotate(135deg);
+}
+
+.navhide:after {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+.navhide div {
+    transform: scale(0);
+}
+
+.setwidth {
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+}
+
+header div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-brand img {
+    height: 3.6vw;
+    width: 4.4vw;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    z-index: 5;
+    color: #fff;
+    box-shadow: 0px 2px #fff;
+}
+
+nav ul li a {
+    margin: 1vw;
+}
+
+button.butt {
+    color: #fff;
+    margin: 2vh 0vh;
+}
+
+nav ul li a button {
+    border: none;
+    padding: 2%;
+    background-color: transparent;
+    font-weight: 500;
+    margin: 2vh 2vh;
+    margin-bottom: 0px;
+}
+
+nav ul li a button:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    margin: auto 0vh;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.social-media {
+    display: flex;
+    margin-right: auto;
+}
+
+.btn-instagram {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-instagram:hover,
+.btn-instagram:active {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-facebook {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:active {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:active {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-a:after {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin-top: 1vh;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.navbar.navbar-expand-md.setwidth {
+    margin-bottom: 0px;
+}
+
+.special {
+    padding: 15px 20px;
+    padding-top: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 4px 7px solid lightgrey;
+    margin: 1vh 0px;
+}
+
+.special:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
+    transform: none;
+}
+
+nav {
+    margin-right: 0;
+}
+
+@media screen and (max-width:766px) {
+    nav {
+        margin-right: auto;
+    }
+    .navbar-brand {
+        line-height: 0px;
+        height: fit-content;
+        height: -moz-fit-content;
+        height: -webkit-fit-content;
+        margin: 1.5%;
+        margin-right: auto;
+        display: block;
+    }
+    .navbar-brand img {
+        height: 45px;
+        width: 55px;
+    }
+    .navdisplay {
+        display: block;
+    }
+    .setwidth {
+        width: 100%;
+    }
+    section {
+        /* display: none; */
+        height: 25vh;
+    }
+    .social-media {
+        margin-right: 0px;
+    }
+    section img {
+        height: 8vh;
+        margin: 2.5vh;
+    }
+    .navbar.navbar-expand-md.setwidth {
+        padding: 0px;
+        width: 100vw;
+        margin: 0px -30px;
+    }
+    nav ul li:nth-child(6) {
+        display: block;
+        margin: 3%;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    nav ul li a button:hover {
+        transform: none;
+    }
+    #header {
+        padding: 10px;
+    }
+}
+
+
+/* parallax */
+
+.parallax {
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    background-position: center;
+    -moz-background-position: center;
+    -webkit-background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    margin-top: -10px;
+    height: 100vh;
+    display: flex;
+    background-image: url(../images/logo.jpg);
+}
+
+.parallax section a h1 {
+    text-shadow: 2px 2px #000;
+    color: black;
+}
+
+.parallax2 {
+    background-color: black;
+    background-image: url(../images/logo2.jpg);
+}
+
+.parallax2 section a h1 {
+    color: white;
+}
+
+@media screen and (max-width:766px) {
+    .parallax {
+        height: 80vh;
+        background-size: 150%;
+    }
+}
+
+
+/* about */
+
+#about {
+    padding: 2.5vh;
+    background-color: #fff;
+}
+
+#about h1,
+#projects h1,
+#prohects h3,
+#knowus h1,
+#knowus h3 {
+    text-align: center;
+    font-family: "Pacifico";
+}
+
+#about p,
+#knowus p {
+    font-size: large;
+    padding: 5vh;
+}
+
+.strengths .col-sm-6 {
+    display: flex;
+}
+
+.strengths .col-sm-6 .col-sm-12:before {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
+    content: '';
+    transform: skew(2deg, 2deg);
+    background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    z-index: 0;
+}
+
+.strengths .col-sm-6 {
+    margin: 15px 0;
+}
+
+.row {
+    margin: 0 -30px;
+}
+
+
+/* 
+.strengths .col-sm-6 .col-sm-12:after {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    content: '';
+    background-color: black;
+    z-index: 1;
+} */
+
+.strengths {
+    position: relative;
+}
+
+.strengths .col-sm-6 .col-sm-12 {
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    padding: 0px;
+    z-index: 1;
+    /* margin: 2vh; */
+}
+
+.strengths .col-sm-6 .col-sm-12 .content {
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.content h3 {
+    font-weight: 100;
+    margin: 5px;
+    transition: 1s ease-in-out;
+}
+
+.strengths .col-sm-6 .col-sm-12:nth-child(1):before {
+    background: linear-gradient(to left, #12c2e9, #f64f59);
+    background: -webkit-linear-gradient(to left, #12c2e9, #f64f59);
+}
+
+.strengths .col-sm-6 .col-sm-12:nth-child(2):before {
+    background: linear-gradient(to left, orange, red);
+    background: -webkit-linear-gradient(to left, orange, red);
+}
+
+.strengths .col-sm-6 .col-sm-12:nth-child(3):before {
+    background: linear-gradient(to left, hotpink, yellow);
+    background: -webkit-linear-gradient(to left, hotpink, yellow);
+}
+
+.strengths .col-sm-6 .col-sm-12:nth-child(4):before {
+    background: linear-gradient(to left, green, red);
+    background: -webkit-linear-gradient(to left, green, red);
+}
+
+.material-icons,
+i {
+    font-size: 100px !important;
+    margin: 3vh;
+}
+
+.d-none {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .strengths .col-sm-6 .col-sm-12 {
+        max-width: 100%;
+    }
+    #about p {
+        padding: 15px;
+        text-align: justify;
+    }
+    .col-sm-6 .col-sm-12 .content .material-icons,
+    .col-sm-6 .col-sm-12 .content i,
+    .col-sm-6 .col-sm-12 .content h3 {
+        opacity: 1;
+        position: static;
+        transition: 0.5s ease-in-out;
+        margin: 1vh;
+    }
+    .d-none {
+        display: block !important;
+    }
+    .strengths .d-none1 {
+        display: none;
+    }
+}
+
+
+/* projects */
+
+#projects {
+    display: flex;
+}
+
+#projects.container-fluid {
+    padding: 0px;
+}
+
+#projects .container {
+    display: flex;
+}
+
+#projects .container:nth-child(2) {
+    background-image: url(../images/saurabhbackground.jpg);
+    height: 100vh;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+#projects .container .container-fluid {
+    height: fit-content;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+#projects .container .container-fluid div {
+    font-size: large;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 800;
+}
+
+#projects h3 {
+    font-size: x-large;
+    color: white;
+    margin: 3vh;
+}
+
+@media screen and (max-width:766px) {
+    #projects .container {
+        background-image: url(../images/saurabhbackground2.jpg);
+        height: 80vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #projects .container .container-fluid {
+        height: fit-content;
+        margin: auto;
+        padding: 15px;
+        text-align: center;
+    }
+    #projects h1 {
+        font-size: 100px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5vh;
+        color: white;
+    }
+    #projects .container .container-fluid div {
+        font-size: large;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    #projects h3 {
+        font-size: x-large;
+        color: white;
+        margin: 3vh;
+    }
+    #projects .container:nth-child(2) {
+        display: none;
+    }
+}
+
+
+/* know us */
+
+#knowus.container-fluid {
+    /* height: 100vh; */
+    background-color: #fff;
+}
+
+#knowus h3 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+
+/* footer */
+
+footer {
+    color: #fff;
+    padding: 15px;
+}
+
+footer p {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+footer .col-sm-12 {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 15px 0px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
